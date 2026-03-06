@@ -56,7 +56,7 @@
         "@types/eventsource": "catalog:devTools",
         "@types/express": "catalog:devTools",
         "@types/express-serve-static-core": "catalog:devTools",
-        "@types/node": "^24.10.1",
+        "@types/node": "^22.19.1",
         "@types/supertest": "catalog:devTools",
         "@types/ws": "catalog:devTools",
         "@typescript/native-preview": "catalog:devTools",
