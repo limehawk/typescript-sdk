@@ -21,7 +21,7 @@ catalogs:
         eslint-plugin-n: ^17.23.1
         prettier: 3.8.1
         supertest: ^7.0.0
-        tsdown: ^0.18.0
+        tsdown: ^0.21.0
         typedoc: ^0.28.14
         tsx: ^4.16.5
         typescript: ^5.9.3
