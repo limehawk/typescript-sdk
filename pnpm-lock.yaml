@@ -48,9 +48,6 @@ catalogs:
     prettier:
       specifier: 3.8.1
       version: 3.8.1
-    supertest:
-      specifier: ^7.0.0
-      version: 7.1.4
     tsdown:
       specifier: ^0.21.0
       version: 0.21.4
@@ -85,6 +82,9 @@ catalogs:
     eventsource-parser:
       specifier: ^3.0.0
       version: 3.0.6
+    jose:
+      specifier: ^6.1.3
+      version: 6.2.2
   runtimeServerOnly:
     '@hono/node-server':
       specifier: ^1.19.9
@@ -205,7 +205,7 @@ importers:
         version: 3.8.1
       supertest:
         specifier: catalog:devTools
-        version: 7.1.4
+        version: 7.2.2
       tsdown:
         specifier: catalog:devTools
         version: 0.21.4(@typescript/native-preview@7.0.0-dev.20260105.1)(typescript@5.9.3)
@@ -825,7 +825,7 @@ importers:
         version: 3.8.1
       supertest:
         specifier: catalog:devTools
-        version: 7.1.4
+        version: 7.2.2
       tsdown:
         specifier: catalog:devTools
         version: 0.21.4(@typescript/native-preview@7.0.0-dev.20260105.1)(typescript@5.9.3)
@@ -900,7 +900,7 @@ importers:
         version: link:../../common/vitest-config
       supertest:
         specifier: catalog:devTools
-        version: 7.1.4
+        version: 7.2.2
       vitest:
         specifier: catalog:devTools
         version: 4.0.18(@types/node@25.5.0)(tsx@4.21.0)(yaml@2.8.3)
@@ -3620,6 +3620,10 @@ packages:
     resolution: {integrity: sha512-4EK3+xJl8Ts67nLYNwqw/dsFVnCf+qR7RgXSK9jEEm9unao3njwMDdmsdvoKBKHzxd7tCYz5e5M+SnMjdtXGQQ==}
     engines: {node: '>=0.6'}
 
+  qs@6.15.0:
+    resolution: {integrity: sha512-mAZTtNCeetKMH+pSjrb76NAM8V9a05I9aBZOHztWy/UqcJdQYNsf59vrRKWnojAT9Y+GbIvoTBC++CPHqpDBhQ==}
+    engines: {node: '>=0.6'}
+
   quansync@0.2.11:
     resolution: {integrity: sha512-AifT7QEbW9Nri4tAwR5M/uzpBuqfZf+zwaEM/QkzEjj7NBuFD2rBuy0K3dE+8wltbezDV7JMA0WfnCPYRSYbXA==}
 
@@ -3890,12 +3894,12 @@ packages:
     resolution: {integrity: sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==}
     engines: {node: '>=8'}
 
-  superagent@10.2.3:
-    resolution: {integrity: sha512-y/hkYGeXAj7wUMjxRbB21g/l6aAEituGXM9Rwl4o20+SX3e8YOSV6BxFXl+dL3Uk0mjSL3kCbNkwURm8/gEDig==}
+  superagent@10.3.0:
+    resolution: {integrity: sha512-B+4Ik7ROgVKrQsXTV0Jwp2u+PXYLSlqtDAhYnkkD+zn3yg8s/zjA2MeGayPoY/KICrbitwneDHrjSotxKL+0XQ==}
     engines: {node: '>=14.18.0'}
 
-  supertest@7.1.4:
-    resolution: {integrity: sha512-tjLPs7dVyqgItVFirHYqe2T+MfWc2VOBQ8QFKKbWTA3PU7liZR8zoSpAi/C1k1ilm9RsXIKYf197oap9wXGVYg==}
+  supertest@7.2.2:
+    resolution: {integrity: sha512-oK8WG9diS3DlhdUkcFn4tkNIiIbBx9lI2ClF8K+b2/m8Eyv47LSawxUzZQSNKUrVb2KsqeTDCcjAAVPYaSLVTA==}
     engines: {node: '>=14.18.0'}
 
   supports-color@7.2.0:
@@ -6972,6 +6976,10 @@ snapshots:
     dependencies:
       side-channel: 1.1.0
 
+  qs@6.15.0:
+    dependencies:
+      side-channel: 1.1.0
+
   quansync@0.2.11: {}
 
   quansync@1.0.0: {}
@@ -7324,7 +7332,7 @@ snapshots:
 
   strip-json-comments@3.1.1: {}
 
-  superagent@10.2.3:
+  superagent@10.3.0:
     dependencies:
       component-emitter: 1.3.1
       cookiejar: 2.1.4
@@ -7334,14 +7342,15 @@ snapshots:
       formidable: 3.5.4
       methods: 1.1.2
       mime: 2.6.0
-      qs: 6.14.1
+      qs: 6.15.0
     transitivePeerDependencies:
       - supports-color
 
-  supertest@7.1.4:
+  supertest@7.2.2:
     dependencies:
+      cookie-signature: 1.2.2
       methods: 1.1.2
-      superagent: 10.2.3
+      superagent: 10.3.0
     transitivePeerDependencies:
       - supports-color
 
