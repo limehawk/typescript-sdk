@@ -147,8 +147,8 @@ importers:
         specifier: workspace:^
         version: link:packages/client
       '@modelcontextprotocol/conformance':
-        specifier: 0.1.15
-        version: 0.1.15(@cfworker/json-schema@4.1.1)
+        specifier: 0.1.16
+        version: 0.1.16(@cfworker/json-schema@4.1.1)
       '@modelcontextprotocol/node':
         specifier: workspace:^
         version: link:packages/middleware/node
@@ -1448,8 +1448,8 @@ packages:
   '@manypkg/get-packages@1.1.3':
     resolution: {integrity: sha512-fo+QhuU3qE/2TQMQmbVMqaQ6EWbMhi4ABWP+O4AM1NqPBuy0OrApV5LO6BrrgnhtAHS2NH6RrVk9OL181tTi8A==}
 
-  '@modelcontextprotocol/conformance@0.1.15':
-    resolution: {integrity: sha512-B1eNYpv5kas9YFC40su7SWhKHR2DwYzJRpiX6dfWzDWMcDr71myKVj//PwyqUHC7oucs3EJqcqnwvSuUwvenoQ==}
+  '@modelcontextprotocol/conformance@0.1.16':
+    resolution: {integrity: sha512-GI7qiN0r39/MH2srVUR3AXaEN0YLCro20lIBbnvc1frBhszenxvUifBuTzxeVQVagILfBzCIcnungUOma8OrgA==}
     hasBin: true
 
   '@modelcontextprotocol/sdk@1.27.1':
@@ -4255,11 +4255,11 @@ packages:
     peerDependencies:
       zod: ^3.25 || ^4
 
-  zod@3.25.76:
-    resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
-
   zod@4.3.5:
     resolution: {integrity: sha512-k7Nwx6vuWx1IJ9Bjuf4Zt1PEllcwe7cls3VNzm4CQ1/hgtFUK2bRNG3rvnpPUhFjmqJKAKtjV576KnUkHocg/g==}
+
+  zod@4.3.6:
+    resolution: {integrity: sha512-rftlrkhHZOcjDwkGlnUtZZkvaPHCsDATp4pGpuOOMDaTdDDXF91wuVDJoWoPsKX/3YPQ5fHuF3STjcYyKr+Qhg==}
 
 snapshots:
 
@@ -4765,9 +4765,9 @@ snapshots:
       globby: 11.1.0
       read-yaml-file: 1.1.0
 
-  '@modelcontextprotocol/conformance@0.1.15(@cfworker/json-schema@4.1.1)':
+  '@modelcontextprotocol/conformance@0.1.16(@cfworker/json-schema@4.1.1)':
     dependencies:
-      '@modelcontextprotocol/sdk': 1.27.1(@cfworker/json-schema@4.1.1)(zod@3.25.76)
+      '@modelcontextprotocol/sdk': 1.27.1(@cfworker/json-schema@4.1.1)(zod@4.3.6)
       '@octokit/rest': 22.0.1
       commander: 14.0.2
       eventsource-parser: 3.0.6
@@ -4775,12 +4775,12 @@ snapshots:
       jose: 6.1.3
       undici: 7.22.0
       yaml: 2.8.2
-      zod: 3.25.76
+      zod: 4.3.6
     transitivePeerDependencies:
       - '@cfworker/json-schema'
       - supports-color
 
-  '@modelcontextprotocol/sdk@1.27.1(@cfworker/json-schema@4.1.1)(zod@3.25.76)':
+  '@modelcontextprotocol/sdk@1.27.1(@cfworker/json-schema@4.1.1)(zod@4.3.6)':
     dependencies:
       '@hono/node-server': 1.19.11(hono@4.11.4)
       ajv: 8.18.0
@@ -4797,8 +4797,8 @@ snapshots:
       json-schema-typed: 8.0.2
       pkce-challenge: 5.0.1
       raw-body: 3.0.2
-      zod: 3.25.76
-      zod-to-json-schema: 3.25.1(zod@3.25.76)
+      zod: 4.3.6
+      zod-to-json-schema: 3.25.1(zod@4.3.6)
     optionalDependencies:
       '@cfworker/json-schema': 4.1.1
     transitivePeerDependencies:
@@ -7729,14 +7729,14 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  zod-to-json-schema@3.25.1(zod@3.25.76):
-    dependencies:
-      zod: 3.25.76
-
   zod-to-json-schema@3.25.1(zod@4.3.5):
     dependencies:
       zod: 4.3.5
 
-  zod@3.25.76: {}
+  zod-to-json-schema@3.25.1(zod@4.3.6):
+    dependencies:
+      zod: 4.3.6
 
   zod@4.3.5: {}
+
+  zod@4.3.6: {}
