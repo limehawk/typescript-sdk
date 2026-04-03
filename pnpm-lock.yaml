@@ -69,9 +69,9 @@ catalogs:
     vite-tsconfig-paths:
       specifier: ^5.1.4
       version: 5.1.4
-    ws:
-      specifier: ^8.18.0
-      version: 8.18.3
+    vitest:
+      specifier: ^4.0.15
+      version: 4.1.2
   runtimeClientOnly:
     cross-spawn:
       specifier: ^7.0.5
@@ -229,7 +229,7 @@ importers:
         version: 4.1.2(@types/node@22.19.15)(vite@7.3.1(@types/node@22.19.15)(tsx@4.21.0)(yaml@2.8.3))
       ws:
         specifier: catalog:devTools
-        version: 8.18.3
+        version: 8.20.0
       zod:
         specifier: catalog:runtimeShared
         version: 4.3.5
@@ -4249,8 +4249,8 @@ packages:
   wrappy@1.0.2:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
 
-  ws@8.18.3:
-    resolution: {integrity: sha512-PEIGCY5tSlUt50cqyMXfCzX+oOPqN0vuGqWzbcJ2xvnkzkq46oOpz7dQaTDBdfICb4N14+GARUDw2XV2N4tvzg==}
+  ws@8.20.0:
+    resolution: {integrity: sha512-sAt8BhgNbzCtgGbt2OxmpuryO63ZoDk/sqaB/znQm94T4fCEsy/yV+7CdC1kJhOU9lboAEU7R3kquuycDoibVA==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       bufferutil: ^4.0.1
@@ -7749,7 +7749,7 @@ snapshots:
 
   wrappy@1.0.2: {}
 
-  ws@8.18.3: {}
+  ws@8.20.0: {}
 
   yaml@2.8.2: {}
 
