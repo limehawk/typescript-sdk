@@ -28,7 +28,7 @@
         "eslint-import-resolver-typescript": "^4.4.4",
         "eslint-plugin-import": "^2.32.0",
         "eslint-plugin-n": "catalog:devTools",
-        "eslint-plugin-simple-import-sort": "^12.1.1",
+        "eslint-plugin-simple-import-sort": "^13.0.0",
         "eslint-plugin-unicorn": "^64.0.0",
         "prettier": "catalog:devTools",
         "typescript": "catalog:devTools",
