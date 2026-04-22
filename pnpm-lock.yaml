@@ -57,6 +57,9 @@ catalogs:
     tsx:
       specifier: ^4.16.5
       version: 4.21.0
+    typedoc:
+      specifier: ^0.28.14
+      version: 0.28.19
     typescript:
       specifier: ^5.9.3
       version: 5.9.3
@@ -95,9 +98,6 @@ catalogs:
     express:
       specifier: ^5.2.1
       version: 5.2.1
-    hono:
-      specifier: ^4.11.4
-      version: 4.11.4
   runtimeShared:
     '@cfworker/json-schema':
       specifier: ^4.1.1
@@ -322,7 +322,7 @@ importers:
     dependencies:
       '@hono/node-server':
         specifier: catalog:runtimeServerOnly
-        version: 1.19.14(hono@4.11.4)
+        version: 1.19.14(hono@4.12.14)
       '@modelcontextprotocol/examples-shared':
         specifier: workspace:^
         version: link:../shared
@@ -349,7 +349,7 @@ importers:
         version: 5.2.1
       hono:
         specifier: catalog:runtimeServerOnly
-        version: 4.11.4
+        version: 4.12.14
       zod:
         specifier: catalog:runtimeShared
         version: 4.3.5
@@ -718,7 +718,7 @@ importers:
     dependencies:
       '@hono/node-server':
         specifier: catalog:runtimeServerOnly
-        version: 1.19.14(hono@4.11.4)
+        version: 1.19.14(hono@4.12.14)
     devDependencies:
       '@eslint/js':
         specifier: catalog:devTools
@@ -3060,6 +3060,10 @@ packages:
     resolution: {integrity: sha512-U7tt8JsyrxSRKspfhtLET79pU8K+tInj5QZXs1jSugO1Vq5dFj3kmZsRldo29mTBfcjDRVRXrEZ6LS63Cog9ZA==}
     engines: {node: '>=16.9.0'}
 
+  hono@4.12.14:
+    resolution: {integrity: sha512-am5zfg3yu6sqn5yjKBNqhnTX7Cv+m00ox+7jbaKkrLMRJ4rAdldd1xPd/JzbBWspqaQv6RSTrgFN95EsfhC+7w==}
+    engines: {node: '>=16.9.0'}
+
   hookable@6.1.0:
     resolution: {integrity: sha512-ZoKZSJgu8voGK2geJS+6YtYjvIzu9AOM/KZXsBxr83uhLL++e9pEv/dlgwgy3dvHg06kTz6JOh1hk3C8Ceiymw==}
 
@@ -4744,9 +4748,9 @@ snapshots:
       '@shikijs/types': 3.23.0
       '@shikijs/vscode-textmate': 10.0.2
 
-  '@hono/node-server@1.19.14(hono@4.11.4)':
+  '@hono/node-server@1.19.14(hono@4.12.14)':
     dependencies:
-      hono: 4.11.4
+      hono: 4.12.14
 
   '@humanfs/core@0.19.1': {}
 
@@ -4813,7 +4817,7 @@ snapshots:
 
   '@modelcontextprotocol/sdk@1.27.1(@cfworker/json-schema@4.1.1)(zod@4.3.6)':
     dependencies:
-      '@hono/node-server': 1.19.14(hono@4.11.4)
+      '@hono/node-server': 1.19.14(hono@4.12.14)
       ajv: 8.18.0
       ajv-formats: 3.0.1(ajv@8.18.0)
       content-type: 1.0.5
@@ -4823,7 +4827,7 @@ snapshots:
       eventsource-parser: 3.0.6
       express: 5.2.1
       express-rate-limit: 8.2.1(express@5.2.1)
-      hono: 4.11.4
+      hono: 4.12.14
       jose: 6.2.2
       json-schema-typed: 8.0.2
       pkce-challenge: 5.0.1
@@ -6479,6 +6483,8 @@ snapshots:
       function-bind: 1.1.2
 
   hono@4.11.4: {}
+
+  hono@4.12.14: {}
 
   hookable@6.1.0: {}
 
