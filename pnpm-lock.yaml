@@ -46,8 +46,8 @@ catalogs:
       specifier: ^17.23.1
       version: 17.24.0
     prettier:
-      specifier: 3.8.3
-      version: 3.8.3
+      specifier: 3.8.4
+      version: 3.8.4
     supertest:
       specifier: ^7.0.0
       version: 7.2.2
@@ -98,9 +98,6 @@ catalogs:
     express:
       specifier: ^5.2.1
       version: 5.2.1
-    hono:
-      specifier: ^4.11.4
-      version: 4.12.23
   runtimeShared:
     '@cfworker/json-schema':
       specifier: ^4.1.1
@@ -205,7 +202,7 @@ importers:
         version: 3.3.3
       prettier:
         specifier: catalog:devTools
-        version: 3.8.3
+        version: 3.8.4
       supertest:
         specifier: catalog:devTools
         version: 7.2.2
@@ -269,7 +266,7 @@ importers:
         version: 64.0.0(eslint@9.39.4)
       prettier:
         specifier: catalog:devTools
-        version: 3.8.3
+        version: 3.8.4
       typescript-eslint:
         specifier: catalog:devTools
         version: 8.58.0(eslint@9.39.4)(typescript@5.9.3)
@@ -325,7 +322,7 @@ importers:
     dependencies:
       '@hono/node-server':
         specifier: catalog:runtimeServerOnly
-        version: 1.19.14(hono@4.12.23)
+        version: 1.19.14(hono@4.12.25)
       '@modelcontextprotocol/examples-shared':
         specifier: workspace:^
         version: link:../shared
@@ -352,7 +349,7 @@ importers:
         version: 5.2.1
       hono:
         specifier: catalog:runtimeServerOnly
-        version: 4.12.23
+        version: 4.12.25
       zod:
         specifier: catalog:runtimeShared
         version: 4.3.5
@@ -438,7 +435,7 @@ importers:
         version: 17.24.0(eslint@9.39.4)(typescript@5.9.3)
       prettier:
         specifier: catalog:devTools
-        version: 3.8.3
+        version: 3.8.4
       tsx:
         specifier: catalog:devTools
         version: 4.22.4
@@ -517,7 +514,7 @@ importers:
         version: 17.24.0(eslint@9.39.4)(typescript@5.9.3)
       prettier:
         specifier: catalog:devTools
-        version: 3.8.3
+        version: 3.8.4
       tsdown:
         specifier: catalog:devTools
         version: 0.22.0(@typescript/native-preview@7.0.0-dev.20260105.1)(tsx@4.22.4)(typescript@5.9.3)(unrun@0.2.37)
@@ -599,7 +596,7 @@ importers:
         version: 17.24.0(eslint@9.39.4)(typescript@5.9.3)
       prettier:
         specifier: catalog:devTools
-        version: 3.8.3
+        version: 3.8.4
       tsx:
         specifier: catalog:devTools
         version: 4.22.4
@@ -654,7 +651,7 @@ importers:
         version: 17.24.0(eslint@9.39.4)(typescript@5.9.3)
       prettier:
         specifier: catalog:devTools
-        version: 3.8.3
+        version: 3.8.4
       tsdown:
         specifier: catalog:devTools
         version: 0.22.0(@typescript/native-preview@7.0.0-dev.20260105.1)(tsx@4.22.4)(typescript@5.9.3)(unrun@0.2.37)
@@ -703,7 +700,7 @@ importers:
         version: 17.24.0(eslint@9.39.4)(typescript@5.9.3)
       prettier:
         specifier: catalog:devTools
-        version: 3.8.3
+        version: 3.8.4
       tsdown:
         specifier: catalog:devTools
         version: 0.22.0(@typescript/native-preview@7.0.0-dev.20260105.1)(tsx@4.22.4)(typescript@5.9.3)(unrun@0.2.37)
@@ -721,7 +718,7 @@ importers:
     dependencies:
       '@hono/node-server':
         specifier: catalog:runtimeServerOnly
-        version: 1.19.14(hono@4.12.23)
+        version: 1.19.14(hono@4.12.25)
     devDependencies:
       '@eslint/js':
         specifier: catalog:devTools
@@ -758,7 +755,7 @@ importers:
         version: 17.24.0(eslint@9.39.4)(typescript@5.9.3)
       prettier:
         specifier: catalog:devTools
-        version: 3.8.3
+        version: 3.8.4
       tsdown:
         specifier: catalog:devTools
         version: 0.22.0(@typescript/native-preview@7.0.0-dev.20260105.1)(tsx@4.22.4)(typescript@5.9.3)(unrun@0.2.37)
@@ -825,7 +822,7 @@ importers:
         version: 17.24.0(eslint@9.39.4)(typescript@5.9.3)
       prettier:
         specifier: catalog:devTools
-        version: 3.8.3
+        version: 3.8.4
       supertest:
         specifier: catalog:devTools
         version: 7.2.2
@@ -3179,8 +3176,8 @@ packages:
     resolution: {integrity: sha512-U7tt8JsyrxSRKspfhtLET79pU8K+tInj5QZXs1jSugO1Vq5dFj3kmZsRldo29mTBfcjDRVRXrEZ6LS63Cog9ZA==}
     engines: {node: '>=16.9.0'}
 
-  hono@4.12.23:
-    resolution: {integrity: sha512-eIaZ9qDgu7XV0pxOCrg7/WhnQ6Ivm22UcxhXx/A3dcbqbbYgBEkc6e/J/s7j2tS96zoB0S9VBdLwQNCWwUo4LA==}
+  hono@4.12.25:
+    resolution: {integrity: sha512-2NFaIyNVgJmBs/ecmtGzlmluTFs5cHEWGTdu0t1HBwYzoGXOL5nUQBRMXsXWla5i4KkG//QMzVP88m1+I3fdAQ==}
     engines: {node: '>=16.9.0'}
 
   hookable@6.1.1:
@@ -3727,8 +3724,8 @@ packages:
     engines: {node: '>=10.13.0'}
     hasBin: true
 
-  prettier@3.8.3:
-    resolution: {integrity: sha512-7igPTM53cGHMW8xWuVTydi2KO233VFiTNyF5hLJqpilHfmn8C8gPf+PS7dUT64YcXFbiMGZxS9pCSxL/Dxm/Jw==}
+  prettier@3.8.4:
+    resolution: {integrity: sha512-N2MylSdi48+5N/6S5j+maeHbUSIzzZ5uOcX5Hm4QpV8Dkb1HFjfAKTKX6yNPJQD9AhcT3ifHNB66tWTTJDi11Q==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -4873,9 +4870,9 @@ snapshots:
       '@shikijs/types': 3.23.0
       '@shikijs/vscode-textmate': 10.0.2
 
-  '@hono/node-server@1.19.14(hono@4.12.23)':
+  '@hono/node-server@1.19.14(hono@4.12.25)':
     dependencies:
-      hono: 4.12.23
+      hono: 4.12.25
 
   '@humanfs/core@0.19.1': {}
 
@@ -4942,7 +4939,7 @@ snapshots:
 
   '@modelcontextprotocol/sdk@1.27.1(@cfworker/json-schema@4.1.1)(zod@4.3.6)':
     dependencies:
-      '@hono/node-server': 1.19.14(hono@4.12.23)
+      '@hono/node-server': 1.19.14(hono@4.12.25)
       ajv: 8.20.0
       ajv-formats: 3.0.1(ajv@8.20.0)
       content-type: 1.0.5
@@ -4952,7 +4949,7 @@ snapshots:
       eventsource-parser: 3.1.0
       express: 5.2.1
       express-rate-limit: 8.2.1(express@5.2.1)
-      hono: 4.12.23
+      hono: 4.12.25
       jose: 6.2.3
       json-schema-typed: 8.0.2
       pkce-challenge: 5.0.1
@@ -6675,7 +6672,7 @@ snapshots:
 
   hono@4.11.4: {}
 
-  hono@4.12.23: {}
+  hono@4.12.25: {}
 
   hookable@6.1.1: {}
 
@@ -7160,7 +7157,7 @@ snapshots:
 
   prettier@2.8.8: {}
 
-  prettier@3.8.3: {}
+  prettier@3.8.4: {}
 
   proxy-addr@2.0.7:
     dependencies:
