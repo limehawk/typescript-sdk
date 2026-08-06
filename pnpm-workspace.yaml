@@ -18,7 +18,7 @@ catalogs:
         '@typescript/native-preview': ^7.0.0-dev.20251217.1
         eslint: ^9.39.2
         eslint-config-prettier: ^10.1.8
-        eslint-plugin-n: ^17.23.1
+        eslint-plugin-n: ^18.0.0
         prettier: 3.9.5
         supertest: ^7.0.0
         tsdown: ^0.22.0
